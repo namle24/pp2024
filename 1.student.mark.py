@@ -37,7 +37,7 @@ def show_marks(students, student_id):
             if len(marks) == 0:
                 print("No marks available for the student.")
             else:
-                print(f"Student ID: {student['id']}, Marks:")
+                print(f"Student ID: {student['id']}")
                 for course_id, mark in marks.items():
                     print(f"Course ID: {course_id}, Mark: {mark}")
             return
