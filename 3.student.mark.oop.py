@@ -78,12 +78,16 @@ class Student(Person):
                             gpa = 0.8
                         else:
                             gpa = 0.4
+
                         total_gpa += gpa * credit
 
         if total_credits == 0:
             return 0
 
-        return total_gpa / total_credits
+        weighted_sum = np.sum(np.array(list(self._final.values())) * np.array(list(courses.values())))
+        average_gpa = total_gpa / total_credits
+
+        return average_gpa, weighted_sum
 
 
 class Course:
@@ -126,7 +130,7 @@ class ManagementSystem:
                 if course_id not in student._midterm:
                     midterm = int(input("Enter midterm mark: "))
                     student.add_midterm(course_id, midterm)
-                student.add_final(course_id, mark)
+                student.add_final(course_id, math.floor(mark*10)/10)
                 print("Mark added successfully.")
             else:
                 print("Invalid mark. Mark should be between 0 and 20.")
@@ -159,8 +163,7 @@ class ManagementSystem:
         if not self._students:
             print("No students in the system.")
         else:
-            sorted_students = sorted(self._students, key=lambda student: student.calculate_gpa(self._courses),
-                                     reverse=True)
+            sorted_students = sorted(self._students, key=lambda student: student.calculate_gpa(self._courses), reverse=True)
             print("Sorted Students by GPA:")
             for student in sorted_students:
                 print(f"Student ID: {student._id}, Name: {student._name}, GPA: {student.calculate_gpa(self._courses)}")
