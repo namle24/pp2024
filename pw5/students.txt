@@ -1,0 +1,4 @@
+Student ID: 1
+Student Name: Nam
+Date of Birth: 24/09/2004
+
