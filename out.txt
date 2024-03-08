@@ -1,0 +1,14 @@
+total 56
+drwxrwxr-x 7 namle namle 4096 Thg 3   8 22:16 .
+drwxr-xr-x 7 namle namle 4096 Thg 3   8 19:57 ..
+-rw-rw-r-- 1 namle namle 2642 Thg 3   8 19:47 1.student.mark.py
+-rw-rw-r-- 1 namle namle 3705 Thg 3   8 19:47 2.student.mark.oop.py
+-rw-rw-r-- 1 namle namle 8266 Thg 3   8 19:47 3.student.mark.oop.py
+-rw-rw-r-- 1 namle namle 1145 Thg 3   8 22:16 7.shell..py
+drwxrwxr-x 8 namle namle 4096 Thg 3   8 21:40 .git
+drwxrwxr-x 3 namle namle 4096 Thg 3   8 21:49 .idea
+-rw-rw-r-- 1 namle namle    0 Thg 3   8 22:16 out.txt
+drwxrwxr-x 4 namle namle 4096 Thg 3   8 19:47 pw4
+drwxrwxr-x 4 namle namle 4096 Thg 3   8 18:23 pw5
+drwxrwxr-x 4 namle namle 4096 Thg 3   8 21:04 pw6
+-rwxrwxr-x 1 namle namle  329 Thg 3   8 19:47 README.md
