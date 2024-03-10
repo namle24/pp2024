@@ -1,0 +1,12 @@
+Student ID: 1
+Course ID: 1
+Attendance: 20.0
+Midterm: 13.0
+Final: 12.0
+Total Mark: 45.0
+Course ID: 2
+Attendance: 20.0
+Midterm: 11.0
+Final: 12.0
+Total Mark: 43.0
+
